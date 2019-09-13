@@ -11,7 +11,7 @@ var count = 3;
 
 function checkActive(that) {
     if(!that.previousSibling.previousElementSibling.checked) {
-        console.log(that, that.previousSibling.previousElementSibling, that.parentNode);
+        // console.log(that, that.previousSibling.previousElementSibling, that.parentNode);
         document.querySelector('.main-container__task-done-wrapper').appendChild(that.parentNode);
     } else {
         document.querySelector('.main-container__task-todo-wrapper').appendChild(that.parentNode);
